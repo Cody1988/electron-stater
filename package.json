@@ -1,0 +1,31 @@
+{
+  "name": "electron-starter",
+  "version": "1.0.0",
+  "description": "a electron starter",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "cross-env NODE_ENV=development electron .",
+    "dist": "electron-builder",
+    "dist-win": "electron-builder --win -ia32",
+    "dist-all": "electron-builder -mwl",
+    "pack": "electron-builder --dir",
+    "postinstall": "electron-builder install-app-deps",
+    "clean": "rm -rf ./dist ./render/dist"
+  },
+  "author": "Cody1988",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^5.1.4",
+    "electron": "^2.0.0",
+    "electron-builder": "^20.13.2"
+  },
+  "build": {
+    "appId": "com.cody.electron.starter",
+    "dmg": {
+    },
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
