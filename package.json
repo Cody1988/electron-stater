@@ -14,7 +14,8 @@
     "clean": "rm -rf ./dist ./render/dist"
   },
   "author": "Cody1988",
-  "license": "ISC",
+  "homepage": "https://github.com/Cody1988/electron-stater",
+  "license": "Apache License 2.0",
   "devDependencies": {
     "cross-env": "^5.1.4",
     "electron": "^2.0.0",
